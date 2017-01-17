@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+#react-app {
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+h1, h3 {
+	font-size: 5em;
+	font-family: 'Verdana';
+}
+
+h1 {
+	color: white;
+}
+
+h3 {
+	font-size: 3em;
+	margin: auto;
+	color: white;
+	background: #444;
+	border-top-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+	padding: 1em;
+	width: 30em;
+}
+
+#btn {
+	outline: none;
+	color: #303e8c;
+	box-shadow: 5px 10px 5px #333;
+	background: rgba(2, 239, 108, 0.77);
+	padding: 0.7em;
+	border-radius: 4em;
+	font-size: 2em;
+	width: 15em;
+	cursor: pointer;
+	font-weight: bolder;
+	margin: auto;
+}
+
+.color {
+	color: #123456;
+	cursor: pointer;
+}
