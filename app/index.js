@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM, { findDOMNode } from 'react-dom'
+import ReactTooltip from 'react-tooltip'
+import CopyToClipboard from 'react-copy-to-clipboard'
 import './index.css'
 
 const randomNumber = (min,max) =>  Math.random() * (max - min) + min
@@ -64,9 +66,23 @@ class ContrastColors extends Component {
 		return (
 				<div id="react-app" style={{backgroundColor}}>
 					<h1 style={{color}}>Contrast Colors React</h1>
-					<h3>Background Color : <span className="color">{backgroundColor}</span></h3>
+					<h3>Background Color :
+						<CopyToClipboard text={backgroundColor}>
+							<span>
+								<span data-tip='Copy To Clipboard' ref='bg' className="color" onClick={() => { ReactTooltip.hide(findDOMNode(this.refs.bg)) }}>{backgroundColor}</span>
+								<ReactTooltip type="info"/>
+							</span>
+						</CopyToClipboard>
+					</h3>
 					<button id="btn" onClick={this.randomColor}>Random Color</button>
-					<h3>Foreground Color : <span className="color">{color}</span></h3>
+					<h3>Foreground Color :
+						<CopyToClipboard text={color}>
+							<span>
+								<span data-tip='Copy To Clipboard' ref='fg' className="color" onClick={() => { ReactTooltip.hide(findDOMNode(this.refs.fg)) }}>{color}</span>
+								<ReactTooltip type="info" />
+							</span>
+						</CopyToClipboard>
+					</h3>
 				</div>
 			)
 	}
