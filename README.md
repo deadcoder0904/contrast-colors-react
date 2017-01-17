@@ -12,7 +12,7 @@
 
 ### Note :-
 
-The algorithm sucks completely. I'll implement an awesome algorithm when I understand `hsla` model so that the colors that are generated are in contrast :wink: with each other, i.e, when `1 color` is dark then the `other color` will be light which will be useful for future apps :heart_eyes:.
+The algorithm sucks completely. I'll implement an awesome algorithm when I understand `hsla` model so that the colors that are generated are in contrast :wink: with each other, i.e, when `one color` is dark then the `other color` will be light which will be useful for future apps :heart_eyes:.
 
 ## License
 
